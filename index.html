@@ -10,8 +10,21 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <header class="topbar" role="banner">
+      <button class="icon-btn" aria-label="Toggle navigation" aria-controls="toc-sidebar" aria-expanded="false" data-action="toggle-nav">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <div class="topbar-title">CHAPTER 5 — Life Processes</div>
+      <div class="actions top-actions">
+        <button type="button" data-action="expand-all">Expand all</button>
+        <button type="button" data-action="collapse-all">Collapse all</button>
+        <button type="button" data-action="print">Print / Save PDF</button>
+      </div>
+      <div class="progress" aria-hidden="true"><span class="bar"></span></div>
+    </header>
+
     <div class="layout">
-      <aside class="sidebar" aria-label="Table of contents">
+      <aside id="toc-sidebar" class="sidebar" aria-label="Table of contents">
         <div class="brand">
           <span class="dot" aria-hidden="true"></span>
           <h1>CHAPTER 5 — Life Processes</h1>
@@ -35,13 +48,15 @@
             <li><a href="#learned">What you have learnt</a></li>
           </ul>
         </nav>
-        <div class="actions">
+        <div class="actions side-actions">
           <button type="button" data-action="expand-all">Expand all</button>
           <button type="button" data-action="collapse-all">Collapse all</button>
           <button type="button" data-action="print">Print / Save PDF</button>
         </div>
       </aside>
-      <main class="content">
+      <div class="backdrop" data-action="close-nav" aria-hidden="true"></div>
+
+      <main class="content" role="main">
         <section class="hero">
           <h2>CHAPTER 5 — Life Processes</h2>
           <div class="caption">Clean, faithful summary formatted as a website. All headings, subheadings, activities, figures, definitions preserved as text.</div>
