@@ -1,6 +1,7 @@
 :root{--bg:#0b1020;--bg-elev:#0e1530;--surface:#121a3a;--card:#121a3a;--muted-surface:#0f1734;--text:#e7ecf7;--muted:#a6b0cf;--accent:#7c9cff;--accent-2:#4be4c9;--border:rgba(255,255,255,0.08);--glow:rgba(124,156,255,0.35);--ring:rgba(124,156,255,0.55);--shadow:rgba(0,0,0,0.35);--code:#d1d7ff}
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(124,156,255,.15), transparent 60%),radial-gradient(900px 500px at 10% -10%, rgba(75,228,201,.12), transparent 60%),var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;line-height:1.65;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+/* Increase base text size and line height for better readability */
+html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(124,156,255,.15), transparent 60%),radial-gradient(900px 500px at 10% -10%, rgba(75,228,201,.12), transparent 60%),var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;font-size:18px;line-height:1.75;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 img,svg{max-width:100%;display:block}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -25,7 +26,7 @@ button{border:1px solid var(--border);background:linear-gradient(180deg, rgba(25
 button:hover{border-color:var(--ring);box-shadow:0 0 0 3px rgba(124,156,255,0.12)}
 button:active{transform:translateY(1px)}
 
-.content{padding:36px;max-width:1100px;margin:0 auto}
+.content{padding:36px;max-width:1200px;margin:0 auto}
 @media(max-width:800px){.content{padding:22px}}
 
 .hero{position:relative;background:linear-gradient(145deg, rgba(124,156,255,0.15), rgba(75,228,201,0.12));border:1px solid var(--border);padding:28px;border-radius:16px;margin-bottom:26px;box-shadow:0 8px 24px -10px var(--shadow)}
